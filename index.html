@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Meme Generator</title>
+  </head>
+  <body>
+    <header class="mb-4">
+      <h1>MEME GENERATOR</h1>
+    </header>
+    <main>
+      <section class="form-floating mb-4">
+        <textarea class="form-control" placeholder="Leave a comment here" id="text-input" style="height: 100px" maxlength="60"></textarea>
+        <label for="floatingTextarea2">Texto do meme</label>
+      </section>
+
+      <section class="mb-3">
+        <label for="formFile" class="form-label">Escolha a imagem</label>
+        <input class="form-control" type="file" id="meme-insert">
+      </section>
+
+      <section id="meme-image-container" class="meme-image-container mb-4">
+        <img id="meme-image"></img>
+        <div class="meme-text" id="meme-text"></div>             
+      </section>
+
+      <section class="mb-4">
+        <p class="mb-3">Estilos Customizados: </p>  
+
+        <button class="btn btn-outline-danger" id="fire">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flame" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"></path>
+         </svg>
+        </button>        
+
+        <button class="btn btn-outline-info" id="water">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ripple" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 7c3 -2 6 -2 9 0s6 2 9 0"></path>
+            <path d="M3 17c3 -2 6 -2 9 0s6 2 9 0"></path>
+            <path d="M3 12c3 -2 6 -2 9 0s6 2 9 0"></path>
+         </svg>
+        </button>
+        <button class="btn btn-outline-success" id="earth">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apple" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="12" cy="14" r="7"></circle>
+            <path d="M12 11v-6a2 2 0 0 1 2 -2h2v1a2 2 0 0 1 -2 2h-2"></path>
+            <path d="M10 10.5c1.333 .667 2.667 .667 4 0"></path>
+         </svg>         
+        </button>
+      </section>      
+
+      <section class="memes-prontos">
+        <img class="border border-2 border-secondary" src="imgs/meme1.png" alt="" id="meme-1">
+
+        <img class="border border-2 border-secondary" src="imgs/meme2.png" alt="" id="meme-2">
+
+        <img class="border border-2 border-secondary" src="imgs/meme3.png" alt="" id="meme-3">
+
+        <img class="border border-2 border-secondary" src="imgs/meme4.png" alt="" id="meme-4">        
+      </section>
+    </main>
+
+    <footer class="py-3 mt-5 rodape">
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item">
+          <a href="https://github.com/matheus-ferreira02" class="nav-link px-2 text-muted" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+        </li>
+
+        <li class="nav-item">
+          <a href="https://www.linkedin.com/in/matheus-ferreira-de-araujo-171a07166/" class="nav-link px-2 text-muted" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linkedin</font></font></a>
+        </li>
+      </ul>
+      <p class="text-center text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2021 Ferreira, Matheus</font></font></p>
+    </footer>    
+  </body>
+  <script src="script.js"></script>
+</html>
